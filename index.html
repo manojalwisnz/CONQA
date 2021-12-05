@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <center>
+    <div class="form">
+      <h2> Sales Tax Calculator</h5>
+        <form name="orderform" id="orderform">
+          <table>
+    </div>
+    <tr>
+      <th>
+        <label>Product Price: </label>
+      </th>
+      <th scope="row">
+        <div align="left">
+          <input name="price" type="text" id="price" size="10">
+        </div>
+      </th>
+
+
+    <tr>
+      <th>
+        <label>Quantity:</label>
+      </th>
+      <th scope="row">
+        <div align="left">
+          <input name="quantity" type="text" id="quantity" size="10">
+        </div>
+      </th>
+
+    <tr>
+      <th>
+        <label>State Code:</label>
+      </th>
+      <th scope="row">
+        <div align="left">
+          <labe> </labe>
+          <select id="state">
+            <option value="UT">UT</option>
+            <option value="NV">NV</option>
+            <option value="TX">TX</option>
+            <option value="AL">AL</option>
+            <option value="CA">CA</option>
+          </select>
+        </div>
+      </th>
+    </tr>
+
+    <tr>
+      <th>
+        <label>Subtotal:</label>
+      </th>
+      <th scope="row">
+        <div align="left">
+          <labe> </labe>
+          <input name="subtotal" type="text" id="subtotal"  size="10">
+        </div>
+      </th>
+    </tr>
+
+    <tr>
+      <th>
+        <label>Tax:</label>
+      </th>
+      <th scope="row">
+        <div align="left">
+          <input name="salestax" type="text" id="salestax" size="10">
+        </div>
+      </th>
+    </tr>
+
+    <tr>
+      <th>
+        <label>Total:</label>
+      </th>
+      <th scope="row">
+        <div align="left">
+          <input name="gtotal" type="text" id="gtotal"  size="10">
+        </div>
+      </th>
+    </tr>
+
+    </table>
+    <br>
+
+    <div>
+      <input name="gtotalBtn" onClick="grandTotal();" type="button" id="gtotalBtn" value="Calculate Order">
+    </div>
+
+    </form>
+
+  </center>
+</body>
+
+</html>
