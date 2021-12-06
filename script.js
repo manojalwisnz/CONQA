@@ -27,7 +27,6 @@ if(subTotal == 1000){
 
 var discountedPrice = subTotal - (subTotal * discountRate / 100);
 document.orderform.discountedTotal.value = discountedPrice.toFixed(2);
-discountedTotal
 
 return discountedPrice;
 }
