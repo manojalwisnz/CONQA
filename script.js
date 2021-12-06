@@ -32,7 +32,7 @@ return discountedPrice;
 }
 
 //Takes result of subTotal function to calculate tax
-function calculateTax(discountedPrice){
+function calculateTax(subtotal){
   var stateCode = document.orderform.state.value;
   var taxRate;
 
