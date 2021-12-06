@@ -1,6 +1,7 @@
 //Calculate Order button click function call to calculate and display grant total value
 function grandTotal() {  
   var subtotal = subTotal(document.orderform.price.value, document.orderform.quantity.value);
+  var subtotal = subTotal();
   var tax = calculateTax(subtotal);
   document.orderform.gtotal.value = "";
 }
@@ -21,12 +22,11 @@ function calculateTax(subtotal){
   }else if(stateCode === "CA"){
     taxRate = 8.25;
   }
-
+  
   var tax = subtotal * taxRate;
   document.orderform.salestax.value = tax.toFixed(2);
   return tax;
 }
-
 
 // Calculate sub total 
 function subTotal(itemPrice, quantity){
