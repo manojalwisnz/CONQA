@@ -27,7 +27,6 @@ function calculateTax(subtotal){
   return tax;
 }
 
-
 // Calculate sub total 
 function subTotal(){
   var itemPrice = document.orderform.price.value;
