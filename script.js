@@ -3,6 +3,7 @@ function grandTotal() {
   var subtotal = subTotal();
   document.orderform.gtotal.value = "";
 }
+
 // Calculate sub total 
 function subTotal(){
   var itemPrice = document.orderform.price.value;
@@ -11,5 +12,3 @@ function subTotal(){
   document.orderform.subtotal.value = productPrice.toFixed(2);
   return productPrice;
 }
-
-
