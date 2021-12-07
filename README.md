@@ -1,4 +1,4 @@
-# CONQA
+# Java Script Sales Tax Calculator
 
 
 
